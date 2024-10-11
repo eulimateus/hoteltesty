@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Meu Site de Reservas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -11,34 +12,69 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Quartos</a></li>
         <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre nós</a></li>
+
       </ul>
     </nav>
   </header>
   <main>
-    <section id="busca">
-    <form>
-        <label for="checkin">Data de Check-in:</label>
-        <input type="date" id="checkin" name="checkin" min="2024-10-01" max="2025-10-01">
-        <button type="submite">Buscar</button>
-    </form>
-    </section>
-    <section id="resultados">
-        
-    </section>
-    <section id=" detalhes-quarto">
-        <h2>Quarto Deluxe</h2>
-        <img src="quarto_deluxe.jpeg" alt="Quarto Deluxe">
-        <p>Desfrute de uma estadia luxuosa em nosso Quarto Deluxe.</p>
+    <section id="destaque">
+      <h2>Nossos Quartos</h2>
+      <div class="quarto">
+        <img src=>
+        <h3>Standard</h3>
+        <img src="quarto_standard.png" alt="Quarto Standard" width="200" height="150">
+        <p>Desfrute de uma estadia em nosso Quarto Standard...</p>
+        <a href="#detalhes-standard">Saiba mais</a>
         <ul>
+          <li>Wi-fi Gratuito</li>
+          <li>Ar condicionado</li>
+          <li>TV a cabo</li>
+      </ul>
+      <p>Preço por noite: R$ 150,00</p>
+      <p>Disponibilidade: <span id="disponibilidade">Verificar Disponibilidade</span></p>
+      <button>Reservar</button>
+    </div>
+      <div class="quarto">
+          <h3>Deluxe</h3>
+          <img src="quarto_deluxe.jpeg" alt="Deluxe" width="200" height="150">
+          <p>Desfrute de uma estadia luxuosa em nosso Quarto Deluxe...</p>
+          <a href="#detalhes-quarto">Saiba mais</a>
+          <ul>
             <li>Wi-fi Gratuito</li>
             <li>Ar condicionado</li>
-            <li>TV a cabo</li>
+            <li>Acesso à SmarTv</li>
+            <li>Café da Manhã</li>
         </ul>
         <p>Preço por noite: R$ 250,00</p>
         <p>Disponibilidade: <span id="disponibilidade">Verificar Disponibilidade</span></p>
         <button>Reservar</button>
 
-    </section>
+      </div>
+      <div class="quarto">
+          <h3>Suite Presidencial</h3>
+          <img src="suite_presidencial.png" alt="Suite Presidencial"  alt="Quarto Deluxe" width="200" height="150">
+          <p>Experimente o máximo de luxo em nossa Suite Presidencial...</p>
+          <a href="#detalhes-suite">Saiba mais</a>
+          <ul>
+            <li>Wi-fi Gratuito</li>
+            <li>Ar condicionado</li>
+            <li>Acesso à SmarTv</li>
+            <li>Refeição inclusa</li>
+            <li>Acesso á piscina privada</li>
+            <li>Janelas amplas com vista panorâmica</li>
+            <li>Pisos de madeira ou mármore</li>
+            <li>Design de interiores exclusivo</li>
+            <li>Hidromassagem Exclusiva</li>
+        </ul>
+        <p>Preço por noite: R$ 550,00</p>
+        <p>Disponibilidade: <span id="disponibilidade">Verificar Disponibilidade</span></p>
+        <button>Reservar</button>
+
+      </div>
+    </div>
+  </section>
+
     <section id="form-reserva">
         <form action="#" method="post">
             <label for="nome">Nome:</label>
@@ -59,7 +95,29 @@
 
         </form>
 
-    </section>
+    
+      </section>
+      <section id="busca">
+        <form>
+          <label for="tipo_quarto">Tipo de Quarto:</label>
+          <select id="tipo_quarto" name="tipo_quarto">
+            <option value="1">Standard</option>
+            <option value="2">Deluxe com vista para o mar</option>
+            <option value="3">Suite Presidencial</option>
+          </select>
+          <label for="checkin">Data de Check-in:</label>
+          <input type="date" id="checkin" name="checkin" min="2024-10-01" max="2025-10-01">
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+      <section id="resultados">
+        <h2>Resultados da Busca</h2>
+        <ul>
+          <li><a href="detalhes_quarto_1.html">Quarto Standard - R$ 150,00</a></li>
+          <li><a href="detalhes_quarto_2.html">Quarto Deluxe com vista para o Mar - R$ 250,00</a></li>
+          <li><a href="detalhes_quarto_3.html">Quarto Suíte Presidencial - R$ 550,00</a></li>
+        </ul>
+      </section>
     </main>
   <footer>
     </footer>

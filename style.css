@@ -1,0 +1,105 @@
+/* styles.css */
+
+header {
+    background-color: #d19999;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  nav a:hover {
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do texto */
+  }
+
+ /* Estilizando a seção de busca */
+#busca {
+    /* Define uma cor de fundo suave */
+    background-color: #f5f5f5;
+  
+    /* Adiciona espaço interno para separar os elementos */
+    padding: 20px;
+  
+    /* Arredonda as bordas da seção */
+    border-radius: 5px;
+  
+    /* Adiciona uma sombra leve para dar profundidade */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    /* Centraliza o conteúdo dentro da seção */
+    text-align: center;
+  }
+  
+  /* Estilizando o formulário dentro da seção de busca */
+  #busca form {
+    /* Utiliza flexbox para organizar os elementos em uma coluna */
+    display: flex;
+    flex-direction: column;
+  
+    /* Centraliza os elementos horizontalmente */
+    align-items: center;
+  }
+  
+  /* Estilizando os rótulos dos campos de entrada */
+  #busca label {
+    /* Torna o texto mais destacado */
+    font-weight: bold;
+  
+    /* Adiciona um espaço abaixo do rótulo */
+    margin-bottom: 5px;
+  }
+  
+  /* Estilizando os campos de entrada e a lista suspensa */
+  #busca input, #busca select {
+    /* Adiciona espaço interno para o texto */
+    padding: 10px;
+  
+    /* Cria uma borda sólida */
+    border: 1px solid #ccc;
+  
+    /* Arredonda as bordas */
+    border-radius: 3px;
+  
+    /* Adiciona um espaço abaixo do campo */
+    margin-bottom: 10px;
+  
+    /* Define a largura do campo */
+    width: 250px;
+  }
+  
+  /* Estilizando o botão de busca */
+  #busca button {
+    /* Define a cor de fundo */
+    background-color: #4CAF50;
+  
+    /* Define a cor do texto */
+    color: white;
+  
+    /* Adiciona espaço interno para o texto */
+    padding: 10px 20px;
+  
+    /* Remove a borda */
+    border: none;
+  
+    /* Arredonda as bordas */
+    border-radius: 3px;
+  
+    /* Define o cursor para indicar que é clicável */
+    cursor: pointer;
+  }
