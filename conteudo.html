@@ -3,123 +3,143 @@
 <head>
   <title>Meu Site de Reservas</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c8df0e0096.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon.png">
 </head>
 <body>
   <header>
     <h1>Meu Hotel</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Quartos</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Sobre nós</a></li>
-
+        <li><a href="conteudo.html" target="_parent">Home</a></li>
+        <li><a href="Hoteis.html" target="_parent">Hoteis</a></li>
+        <li><a href="contato.html" target="_parent">Contato</a></li>
+        <li><a href="sobre.html" target="_parent">Sobre nós</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section id="destaque">
-      <h2>Nossos Quartos</h2>
-      <div class="quarto">
-        <img src=>
-        <h3>Standard</h3>
-        <img src="quarto_standard.png" alt="Quarto Standard" width="200" height="150">
-        <p>Desfrute de uma estadia em nosso Quarto Standard...</p>
-        <a href="#detalhes-standard">Saiba mais</a>
-        <ul>
-          <li>Wi-fi Gratuito</li>
-          <li>Ar condicionado</li>
-          <li>TV a cabo</li>
-      </ul>
-      <p>Preço por noite: R$ 150,00</p>
-      <p>Disponibilidade: <span id="disponibilidade">Verificar Disponibilidade</span></p>
-      <button>Reservar</button>
-    </div>
-      <div class="quarto">
-          <h3>Deluxe</h3>
-          <img src="quarto_deluxe.jpeg" alt="Deluxe" width="200" height="150">
-          <p>Desfrute de uma estadia luxuosa em nosso Quarto Deluxe...</p>
-          <a href="#detalhes-quarto">Saiba mais</a>
-          <ul>
-            <li>Wi-fi Gratuito</li>
-            <li>Ar condicionado</li>
-            <li>Acesso à SmarTv</li>
-            <li>Café da Manhã</li>
-        </ul>
-        <p>Preço por noite: R$ 250,00</p>
-        <p>Disponibilidade: <span id="disponibilidade">Verificar Disponibilidade</span></p>
-        <button>Reservar</button>
-
-      </div>
-      <div class="quarto">
-          <h3>Suite Presidencial</h3>
-          <img src="suite_presidencial.png" alt="Suite Presidencial"  alt="Quarto Deluxe" width="200" height="150">
-          <p>Experimente o máximo de luxo em nossa Suite Presidencial...</p>
-          <a href="#detalhes-suite">Saiba mais</a>
-          <ul>
-            <li>Wi-fi Gratuito</li>
-            <li>Ar condicionado</li>
-            <li>Acesso à SmarTv</li>
-            <li>Refeição inclusa</li>
-            <li>Acesso á piscina privada</li>
-            <li>Janelas amplas com vista panorâmica</li>
-            <li>Pisos de madeira ou mármore</li>
-            <li>Design de interiores exclusivo</li>
-            <li>Hidromassagem Exclusiva</li>
-        </ul>
-        <p>Preço por noite: R$ 550,00</p>
-        <p>Disponibilidade: <span id="disponibilidade">Verificar Disponibilidade</span></p>
-        <button>Reservar</button>
-
-      </div>
-    </div>
-  </section>
-
-    <section id="form-reserva">
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required placeholder="seu@email.com">
-
-            <label for="data_checkin">Data de Check-in:</label>
-            <input type="date" id="data_checkin" name="data_checkin" required min="2024-10-01" max="2025-10-01">
-
-            <label for="data_checkout">Data de Check-out:</label>
-            <input type="date" id="data_checkout" name="data_checkout" required min="2024-10-01" max="2025-10-01"> 
-
-            <label for="numero_de_hospedes">Número de Hospedes:</label>
-            <input type="number" id="numero_de_hospedes" name="numero_de_hospedes" required min="0">
-            <button type="submit">Reservar</button>
-
-        </form>
-
+    <section id="banner">
+      <img src="banner.png.jpeg" alt="Banner do hotel">
+      <h2>Encontre o hotel perfeito para suas férias no Rio!</h2>
+      <p>Descubra os melhores hotéis perto das praias mais famosas do Rio de Janeiro e reserve sua estadia com apenas alguns cliques.</p>
+    </section>
+    <section id="destaques"> 
+      <article class="destaque">
+        <img src="hotel vista para o mar.png" alt="Foto do Hotel 1">
+        <h3>Hotel Vista Mar</h3>
+        <p>Acorde com o nascer do sol e a beleza da praia de Copacabana neste hotel com vista panorâmica deslumbrante. Desfrute de conforto, elegância e serviços exclusivos em uma localização privilegiada.</p>
+        <a href="#" class="botao">Saiba mais</a>
+      </article>
+      <article class="destaque">
+        <img src="hotel boutique.png" alt="Foto do Hotel 2">
+        <h3> Hotel Charmoso Boutique</h3>
+        <p>Encante-se com este hotel boutique no coração de Ipanema, a poucos passos da praia. Design moderno, ambiente aconchegante e atendimento personalizado para uma experiência inesquecível.</p>
+        <a href="#" class="botao">Saiba mais</a>
+      </article>
+      <article class="destaque">
+        <img src="hotel familia.png" alt="Foto do Hotel 3">
+        <h3> Hotel Família Feliz</h3>
+        <p>Diversão garantida para toda a família neste hotel com área de lazer completa, piscina infantil, playground e recreação monitorada. Próximo à praia de Copacabana, oferece conforto e praticidade para sua viagem em família.</p>
+        <a href="#" class="botao">Saiba mais</a>
+      </article>
+      <article class="destaque">
+        <img src="hotel economico.png" alt="Foto do Hotel 4">
+        <h3> Hotel Bom Preço </h3>
+        <p>Hospedagem com excelente custo-benefício perto da praia de Leblon. Quartos confortáveis, ambiente acolhedor e serviços essenciais para uma estadia agradável sem gastar muito.</p>
+        <a href="#" class="botao">Saiba mais</a>
+      </article>
+      <article class="destaque">
+        <img src="hotel historico.png" alt="Foto do Hotel 5">
+        <h3> Hotel Solar Antigo</h3>
+        <p>Mergulhe na história do Rio neste charmoso hotel no centro da cidade, com arquitetura colonial e decoração de época. Uma viagem no tempo com todo o conforto e a elegância que você merece.</p>
+        <a href="#" class="botao">Saiba mais</a>
+      </article>
+    </section>
+    <section id="ofertas-rotativas">
+      <h2>Ofertas Especiais</h2>
+      <div class="container">
+        <div class="oferta">
+          <img src="oferta 1.png" alt="Oferta 1">
+          <h3>Garanta seu Refúgio Tropical: Desconto de 25% para Reservas Antecipadas!</h3>
+          <p>Planeje suas férias com antecedência e aproveite 25% de desconto em sua estadia.<br> As melhores acomodações com vista para o mar esperam por você!</p>
+          <a href="#" class="botao">Saiba mais</a>
+        </div>
+        <div class="oferta">
+          <img src="oferta 2.jpeg" alt="Oferta 2">
+          <h3>Romance Carioca: Noites Inesquecíveis com Pacote Especial para Casais!</h3>
+          <p>Surpreenda seu amor com um pacote romântico que inclui café da manhã na cama, espumante, e um jantar à luz de velas em um restaurante com vista panorâmica. Celebre o amor no Rio!</p>
+          <a href="#" class="botao">Saiba mais</a>
+        </div>
+        <div class="oferta">
+          <img src="oferta 3.jpeg" alt="Oferta 3">
+          <h3>Viva o Rio como um Carioca: Experiência Autêntica com Passeios Exclusivos!</h3>
+          <p>Explore o Rio de Janeiro além das praias! Pacotes com trilhas, aulas de surfe, ingressos para o Cristo Redentor e o Pão de Açúcar, e muito mais. Descubra a verdadeira alma carioca!</p>
+          <a href="#" class="botao">Saiba mais</a>
+        </div>
+        </div>
+    </section>
+    <section id="dicas-uteis">
+      <h2>Dicas e Informações Úteis</h2>
+      <p>Descubra tudo o que você precisa saber para aproveitar ao máximo sua viagem ao Rio de Janeiro.</p>
     
-      </section>
-      <section id="busca">
-        <form>
-          <label for="tipo_quarto">Tipo de Quarto:</label>
-          <select id="tipo_quarto" name="tipo_quarto">
-            <option value="1">Standard</option>
-            <option value="2">Deluxe com vista para o mar</option>
-            <option value="3">Suite Presidencial</option>
-          </select>
-          <label for="checkin">Data de Check-in:</label>
-          <input type="date" id="checkin" name="checkin" min="2024-10-01" max="2025-10-01">
-          <button type="submit">Buscar</button>
-        </form>
-      </section>
-      <section id="resultados">
-        <h2>Resultados da Busca</h2>
+      <nav aria-label="Menu de dicas para turistas">
+        <h3>Praias <i class="fas fa-umbrella-beach"></i></h3>
         <ul>
-          <li><a href="detalhes_quarto_1.html">Quarto Standard - R$ 150,00</a></li>
-          <li><a href="detalhes_quarto_2.html">Quarto Deluxe com vista para o Mar - R$ 250,00</a></li>
-          <li><a href="detalhes_quarto_3.html">Quarto Suíte Presidencial - R$ 550,00</a></li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d312068-Reviews-Copacabana_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Copacabana</a>: a praia mais famosa do Rio, com seu calçadão e quiosques.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d312071-Reviews-Ipanema_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Ipanema</a>: conhecida pela beleza natural e pelos frequentadores estilosos.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d318110-Reviews-Praia_do_Leblon-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Leblon</a>: praia mais tranquila e familiar, ideal para relaxar.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d2352425-Reviews-Barra_da_Tijuca_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Barra da Tijuca</a>: a praia mais extensa do Rio, com opções para todos os gostos.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d552651-Reviews-Praia_do_Arpoador-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Arpoador</a>: point para assistir ao pôr do sol e surfar.</li>
         </ul>
-      </section>
+    
+        <h3>Pontos Turísticos <i class="fas fa-landmark"></i></h3>
+        <ul>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d554128-Reviews-Corcovado_Christ_the_Redeemer-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Cristo Redentor</a>: a estátua icônica do Rio, com vista panorâmica da cidade.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d311247-Reviews-Sugarloaf_Mountain-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Pão de Açúcar</a>: outro ponto turístico com vista incrível, acessível por bondinho.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d554128-Reviews-Corcovado_Christ_the_Redeemer-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Corcovado</a>: morro onde fica o Cristo Redentor, com trilhas e áreas verdes.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d311277-Reviews-Botanical_Garden-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Jardim Botânico</a>: um dos maiores jardins botânicos do mundo, com diversas espécies de plantas.</li>
+          <li><a href="https://www.tripadvisor.com.br/Attraction_Review-g303506-d4377179-Reviews-Museu_do_Amanha-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank">Museu do Amanhã</a>: museu de ciência e tecnologia com exposições interativas.</li>
+        </ul>
+    
+        <h3>Dicas Extras <i class="fas fa-info-circle"></i></h3>
+        <ul>
+          <li>
+            Transporte <i class="fas fa-bus"></i>
+            <ul>
+              <li><a href="https://www.google.com/search?q=como+usar+o+transporte+público+no+rio+de+janeiro" target="_blank">Transporte público</a>: como usar o metrô, ônibus e táxis.</li>
+            </ul>
+          </li>
+          <li>
+            Alimentação <i class="fas fa-utensils"></i>
+            <ul>
+              <li><a href="https://www.google.com/search?q=melhores+restaurantes+no+rio+de+janeiro" target="_blank">Restaurantes e bares</a>: sugestões de lugares para comer e beber.</li>
+            </ul>
+          </li>
+          <li>
+            Segurança <i class="fas fa-shield-alt"></i>
+            <ul>
+              <li><a href="https://www.google.com/search?q=dicas+de+segurança+no+rio+de+janeiro" target="_blank">Dicas de segurança</a>: como evitar roubos e furtos.</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
     </main>
-  <footer>
-    </footer>
 </body>
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Meu Site de Reservas <br> Altair <br>Bruna<br>Daniel<br> João<br>Matheus</p>
+    <ul>
+      <li><a href="#">Sobre nós</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Política de privacidade</a></li>
+    </ul>
+    <div class="redes-sociais">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
 </html>
